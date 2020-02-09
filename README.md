@@ -29,8 +29,8 @@ Most syntactic dependency parsing models may fall into one of two categories: tr
 | --------------------------------- | ------- | --------|-----------
 | `bert-large-cased`                | 96.57   | 95.05   | 90.36
 | `xlnet-large-cased`               | 96.97   | 95.37   | 91.59
-| `roberta-large`                   |         |         |
-| `xlm-roberta-large`               |         |         |
+| `roberta-large`                   | 96.86   | 95.27   | 91.34
+| `xlm-roberta-large`               | 96.74   | 95.15   | 91.03
 | `distilbert-base-uncased`         |         |         |
 | `albert-xxlarge-v1`               |         |         |
 | `albert-xxlarge-v2`               |         |         |
@@ -40,8 +40,8 @@ Most syntactic dependency parsing models may fall into one of two categories: tr
 | -------------------------------------- | ------- | --------|-----------
 | `bert-large-cased`                     |  96.70  | 95.20   | 90.36
 | `xlnet-large-cased`                    |  97.12  | 95.53   | 91.59
-| `roberta-large`                        |         |         |
-| `xlm-roberta-large`                    |         |         |
+| `roberta-large`                        |  96.99  | 95.37   | 90.92
+| `xlm-roberta-large`                    |  96.98  | 95.38   | 91.16
 | `distilbert-base-uncased`              |         |         |
 | `albert-xxlarge-v1`                    |         |         |
 | `albert-xxlarge-v2`                    |         |         |
