@@ -32,8 +32,8 @@ Most syntactic dependency parsing models may fall into one of two categories: tr
 | `roberta-large`                   | 96.86   | 95.27   | 91.34
 | `xlm-roberta-large`               | 96.74   | 95.15   | 91.03
 | `distilbert-base-uncased`         |         |         |
-| `albert-xxlarge-v1`               |         |         |
-| `albert-xxlarge-v2`               |         |         |
+| `albert-xxlarge-v1`               | 96.69   | 94.89   | 91.57
+| `albert-xxlarge-v2`               | 96.75   | 94.93   | 91.11
 
 
 | Model with GGDP non-projective infer.  | UAS     | LAS     | Order Acc.     
@@ -43,8 +43,8 @@ Most syntactic dependency parsing models may fall into one of two categories: tr
 | `roberta-large`                        |  96.99  | 95.37   | 90.92
 | `xlm-roberta-large`                    |  96.98  | 95.38   | 91.16
 | `distilbert-base-uncased`              |         |         |
-| `albert-xxlarge-v1`                    |         |         |
-| `albert-xxlarge-v2`                    |         |         |
+| `albert-xxlarge-v1`                    |  96.79  | 94.97   | 91.57
+| `albert-xxlarge-v2`                    |  96.96  | 95.13   | 91.11
 
 
 ## Prepare
