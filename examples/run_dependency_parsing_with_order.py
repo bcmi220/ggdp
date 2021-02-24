@@ -38,13 +38,13 @@ except ImportError:
 
 logger = logging.getLogger(__name__)
 
-ALL_MODELS = sum(
-    (
-        tuple(conf.pretrained_config_archive_map.keys())
-        for conf in (BertForDependencyParsingWithOrderConfig)
-    ),
-    (),
-)
+#ALL_MODELS = sum(
+#    (
+#        tuple(conf.pretrained_config_archive_map.keys())
+#        for conf in (BertForDependencyParsingWithOrderConfig)
+#    ),
+#    (),
+#)
 
 MODEL_CLASSES = {
     "bert": (BertForDependencyParsingWithOrderConfig, BertForDependencyParsingWithOrder, BertTokenizer),
@@ -576,7 +576,7 @@ def main():
     parser.add_argument("--model_type", default=None, type=str, required=True,
                         help="Model type selected in the list: " + ", ".join(MODEL_CLASSES.keys()))
     parser.add_argument("--model_name_or_path", default=None, type=str, required=True,
-                        help="Path to pre-trained model or shortcut name selected in the list: " + ", ".join(ALL_MODELS))
+                        help="Path to pre-trained model")
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="The output directory where the model predictions and checkpoints will be written.")
 
