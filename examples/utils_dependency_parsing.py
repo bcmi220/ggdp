@@ -505,15 +505,15 @@ def convert_examples_to_features_with_parsing_order(
                     label_ids.extend([label_map[label]]*token_span_len)
                 elif convert_strategy == 1:
                     if head == -1: # position for <ROOT>
-                        head_ids.append([-1]+[word_token_starts[word_index]]*(token_span_len-1))
+                        head_ids.extend([-1]+[word_token_starts[word_index]]*(token_span_len-1))
                     else:
-                        head_ids.append([word_token_starts[head]]+[word_token_starts[word_index]]*(token_span_len-1))
+                        head_ids.extend([word_token_starts[head]]+[word_token_starts[word_index]]*(token_span_len-1))
                     label_ids.extend([label_map[label]] + [special_label_id]*(token_span_len-1))
                 else:
                     if head == -1: # position for <ROOT>
-                        head_ids.append([-1]+[word_token_starts[word_index]+idx for idx in range(token_span_len-1)])
+                        head_ids.extend([-1]+[word_token_starts[word_index]+idx for idx in range(token_span_len-1)])
                     else:
-                        head_ids.append([word_token_starts[head]]+[word_token_starts[word_index]+idx for idx in range(token_span_len-1)])
+                        head_ids.extend([word_token_starts[head]]+[word_token_starts[word_index]+idx for idx in range(token_span_len-1)])
                     label_ids.extend([label_map[label]] + [special_label_id]*(token_span_len-1))
 
         
